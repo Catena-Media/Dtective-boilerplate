@@ -10,8 +10,6 @@ hero:
 
 {% include boxes.html columns="3" title="Browse Topics" subtitle="Chose an option that you need help with or search above" %}
 
-{% include featured.html tag="featured" title="Popular Articles" subtitle="Selected featured articles to get you started fast with Dtective" %}
-
 {% include team.html authors="dwane, sofia, matyas, andrea, ilenia, evgenia, sinan" title="We are here to help" subtitle="Our team is just a github issue away ready to answer your questions" %}
 
 {% include cta.html title="Want to contribute?" button_text="Contribute" button_url="/contribute/" subtitle="Get started with our contribution guide and let's create a powerful test automation together" %}
