@@ -1,3 +1,5 @@
+![logo](uploads/logo.png)
+
 # Dtective Boilerplate
 
 ## Quickstart
