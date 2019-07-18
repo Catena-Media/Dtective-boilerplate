@@ -5,7 +5,7 @@
       "category" : "",
       "tags"     : "features, featured",
       "url"      : "/docs/allure/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -13,7 +13,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/docs/bdd/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -21,7 +21,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/docs/cheatsheet/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -29,7 +29,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/docker/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -37,7 +37,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/environmentproperties/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -45,7 +45,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/ide/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -53,7 +53,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/installation/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -61,7 +61,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/overview/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -69,7 +69,7 @@
       "category" : "",
       "tags"     : "othertag",
       "url"      : "/docs/pages/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -77,7 +77,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/quickstart/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -85,7 +85,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/docs/runtests/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -93,7 +93,7 @@
       "category" : "",
       "tags"     : "customize",
       "url"      : "/docs/steps/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -101,7 +101,7 @@
       "category" : "",
       "tags"     : "help, customize",
       "url"      : "/docs/support/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } ,
   
     {
@@ -109,7 +109,7 @@
       "category" : "",
       "tags"     : "features",
       "url"      : "/docs/testenvironment/",
-      "date"     : "2019-07-03 15:24:57 +0200"
+      "date"     : "2019-07-18 10:43:06 +0200"
     } 
   
 ]
