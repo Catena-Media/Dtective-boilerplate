@@ -4,112 +4,112 @@
       "title"    : "Allure report",
       "category" : "",
       "tags"     : "features, featured",
-      "url"      : "/docs/allure/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/allure/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "BDD, Cucumber &amp; Gherkin",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/docs/bdd/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/bdd/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Cheat sheet",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/docs/cheatsheet/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/cheatsheet/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Docker",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/docs/docker/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/docker/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Environment properties",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/docs/environmentproperties/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/environmentproperties/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Editor Configuration",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/docs/ide/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/ide/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Installation",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/docs/installation/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/installation/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Feature overview",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/docs/overview/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/overview/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Updating your billing credit card",
       "category" : "",
       "tags"     : "othertag",
-      "url"      : "/docs/pages/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/pages/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Quickstart",
       "category" : "",
       "tags"     : "setup",
-      "url"      : "/docs/quickstart/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/quickstart/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Run tests",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/docs/runtests/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/runtests/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Steps implementation",
       "category" : "",
       "tags"     : "customize",
-      "url"      : "/docs/steps/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/steps/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Contacting support",
       "category" : "",
       "tags"     : "help, customize",
-      "url"      : "/docs/support/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/support/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } ,
   
     {
       "title"    : "Test Environment",
       "category" : "",
       "tags"     : "features",
-      "url"      : "/docs/testenvironment/",
-      "date"     : "2019-07-18 10:43:06 +0200"
+      "url"      : "Dtective-boilerplate/docs/testenvironment/",
+      "date"     : "2019-07-18 11:14:10 +0200"
     } 
   
 ]
