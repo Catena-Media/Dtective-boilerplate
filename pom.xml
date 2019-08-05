@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>catena</groupId>
+    <artifactId>QA-Vanilla-Automation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>catena-maven-registry</id>
+            <name>Catena Maven Registry</name>
+            <url>http://qa-server.catena.media/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+        </repository>
+    </repositories>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <allure.version>2.10.0</allure.version>
+        <allure.cucumber4.jvm.version>2.10.0</allure.cucumber4.jvm.version>
+        <selenium.version>3.141.59</selenium.version>
+        <aspectj.version>1.8.13</aspectj.version>
+        <cucumber.version>3.0.2</cucumber.version>
+        <junit.version>4.12</junit.version>
+        <maven.surefire.plugin.version>3.0.0-M3</maven.surefire.plugin.version>
+        <allure.version>2.8.1</allure.version>
+        <allure.maven.version>2.9</allure.maven.version>
+        <allure.results.directory.output>${project.build.directory}/allure-results</allure.results.directory.output>
+        <maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+        <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <!--                           -->
+            <!--Maven Compiler Build Plugin-->
+            <!--                           -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <!--Source Encoding -->
+                    <encoding>UTF-8</encoding>
+
+                </configuration>
+            </plugin>
+
+
+            <!--                             -->
+            <!--Maven SureFire Testing Plugin-->
+            <!--                             -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.plugin.version}</version>
+
+                <configuration>
+                    <additionalClasspathElements>
+                        <additionalClasspathElement>src/main/resources</additionalClasspathElement>
+                    </additionalClasspathElements>
+                    <forkCount>3</forkCount>
+                    <rerunFailingTestsCount>1</rerunFailingTestsCount>
+                    <reuseForks>true</reuseForks>
+                    <skipAfterFailureCount>20</skipAfterFailureCount>
+                    <systemPropertyVariables>
+                        <allure.results.directory>${allure.results.directory.output}</allure.results.directory>
+                    </systemPropertyVariables>
+                    <testFailureIgnore>false</testFailureIgnore>
+                    <trimStackTrace>false</trimStackTrace>
+                    <useSystemClassLoader>false</useSystemClassLoader>
+                    <useUnlimitedThreads>false</useUnlimitedThreads>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven.resources.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources-allure-features</id>
+                        <phase>process-test-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${allure.results.directory.output}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}</directory>
+                                    <filtering>true</filtering>
+                                    <includes>
+                                        <include>environment.properties</include>
+                                        <include>categories.json</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-resources-allure-history</id>
+                        <phase>process-test-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${allure.results.directory.output}/history</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.build.directory}/site/allure-maven-plugin/history</directory>
+                                    <filtering>true</filtering>
+                                    <includes>
+                                        <include>*.json</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--                           -->
+            <!--Maven Website Report Plugin-->
+            <!--                           -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.6</version>
+                <configuration>
+                    <port>9000</port>
+                    <tempWebappDirectory>${project.build.directory}/site</tempWebappDirectory>
+                    <settings>
+                        <headerBufferSize>16384</headerBufferSize>
+                        <connectors>
+                            <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                                <port>8080</port>
+                                <maxIdleTime>60000</maxIdleTime>
+                                <headerBufferSize>16192</headerBufferSize>
+                            </connector>
+                        </connectors>
+                    </settings>
+                </configuration>
+            </plugin>
+
+        </plugins>
+        <resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>${project.basedir}</directory>
+                <targetPath>${project.build.directory}/allure-results</targetPath>
+                <includes>
+                    <include>environment.properties</include>
+                    <include>categories.json</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+    <reporting>
+        <plugins>
+            <!--                           -->
+            <!-- Allure test reporting     -->
+            <!--                           -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure.maven.version}</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                    <allureDownloadUrl>http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/%s/allure-commandline-%s.zip</allureDownloadUrl>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.9</version>
+                <reportSets>
+                    <reportSet>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>4.2.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>4.2.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>catena.qa</groupId>
+            <artifactId>TestAutomationEngineAllInOne</artifactId>
+            <version>1.2.6</version>
+        </dependency>
+
+    </dependencies>
+</project>

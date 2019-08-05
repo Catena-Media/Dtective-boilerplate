@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  runner-chrome:
+    image: testautomation
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - BrowserType=${BrowserType:-chrome}
+      - SeleniumHubUrl=${SeleniumHubUrl:-http://myseleniumhub/wd/hub}
+      - IsRemoteInstance=${IsRemoteInstance:-true}
+      - IsSingleInstance=${IsSingleInstance:-true}
+      - WebAppUrl=${WebAppUrl:-http://mysite.com}
+      - WebDriverTimeout=${WebDriverTimeout:-3}
+      - WebDriverDelayMS=${WebDriverDelayMS:-100}
+      - WebAppUser=${WebAppUser:-admin@test.com}
+      - WebAppPass=${WebAppPass:-thisisnotapassword}
+      - BrowserWidth=${BrowserWidth:-1920}
+      - BrowserHeight=${BrowserHeight:-1080}
+      - RecordScreenshots=${RecordScreenshots:-true}
+      - TestEnvironment=${TestEnvironment:-env-CI}
+      - ChromeHeadlessMode=${ChromeHeadlessMode:-true}
+      - FirefoxHeadlessMode=${FirefoxHeadlessMode:-true}
+      - HighlightElements=${HighlightElements:-true}
+    entrypoint: /bin/bash
+    stdin_open: true
+    network_mode: bridge

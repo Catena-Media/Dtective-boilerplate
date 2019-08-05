@@ -1,0 +1,19 @@
+{
+  "local-dev": {
+    "unitTestSite": "http://localhost:8088",
+    "TestApi": "http://localhost:8088/api"
+  },
+  "env-local": {
+    "unitTestSite": "http://localhost:8088",
+    "TestApi": "http://localhost:8088/api"
+  },
+  "env-docker-local": {
+    "unitTestSite": "http://examplesite",
+    "TestApi": "http://examplesite/api"
+  },
+  "env-CI": {
+    "TestApi": "http://my-ci-server/api",
+    "unitTestSite": "http://mysite"
+  }
+}
+
