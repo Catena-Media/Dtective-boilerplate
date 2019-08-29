@@ -4,20 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>catena.qa</groupId>
-    <artifactId>Dtective-boilerplate</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-    <repositories>
-        <repository>
-            <id>catena-maven-registry</id>
-            <name>Catena Maven Registry</name>
-            <url>http://qa-server.catena.media/repository/maven-public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
+    <groupId>io.dtective</groupId>
+    <artifactId>dtective-boilerplate</artifactId>
+    <version>1.0</version>
 
     <properties>
         <!--  dtective-->
