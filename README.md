@@ -5,7 +5,7 @@
 ## Quickstart
 
 This repository has the boilerplate code necessary to start writing tests as fast as possible.
-To get the boilerplate please clone this repository. Check the [docs](https://dtective.io) for more information on
+To get the boilerplate please clone this repository. Check the [docs](http://dtective.io) for more information on
 how to get started, installations and necessary configuration.
 
 Also take a look at the [cheatsheet](https://catena-media.github.io/Dtective/docs/cheatsheet/) to start writing tests right away.
