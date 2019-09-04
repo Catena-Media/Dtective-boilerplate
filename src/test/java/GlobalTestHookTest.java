@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         },
         glue = {
                 "quality",
-                "classpath:com.catena.qa.framework"
-        }, plugin = {"io.qameta.allure.cucumber3jvm.AllureCucumber3Jvm"})
+                "classpath:io.dtective"
+        }, plugin = {"io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"})
 public class GlobalTestHookTest {
 }

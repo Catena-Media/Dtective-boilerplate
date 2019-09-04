@@ -1,27 +1,3 @@
-w  # ----------------------------------------------------------------------------------------------- #
-  # Execution How-To
-  # ----------------------------------------------------------------------------------------------- #
-  # Reference - https://github.com/cucumber/cucumber/wiki/Tags
-  #
-  # Example: Running scenarios which match @important OR @billing
-  #
-  #     cucumber --tags @Scenario1,@Scenario2
-  #
-  #
-  # Example: Running scenarios which match @important AND @billing
-  #
-  #     cucumber --tags @Scenario1 --tags @Scenario2
-  #
-  #
-  # Example: Running scenarios which match: (@billing OR @WIP) AND @important
-  #
-  #     cucumber --tags @Scenario1,@Scenario2 --tags @Scenario3
-  #
-  #
-  # Example: Skipping both @Scenario1 and @Scenario2 tags
-  #
-  #     cucumber --tags ~@Scenario1 --tags ~@Scenario2
-
 
   @ExampleTestCategory1
   Feature: Tags in BDD test execution guideline
